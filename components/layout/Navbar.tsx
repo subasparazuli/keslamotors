@@ -17,7 +17,7 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <header 
+    <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? 'py-4' : 'py-6'
       }`}
@@ -27,7 +27,7 @@ export const Navbar = () => {
       }`}>
         <Link href="/" className="flex items-center gap-2 z-50">
           <span className="text-2xl font-display font-bold tracking-tighter text-white">
-            Volt<span className="text-primary">Drive</span>
+            Kesla<span className="text-primary">Auto</span>
           </span>
         </Link>
 
@@ -48,9 +48,10 @@ export const Navbar = () => {
         </div>
 
         {/* Mobile Toggle */}
-        <button 
+        <button
           className="md:hidden text-white z-50 relative"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle menu"
         >
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>

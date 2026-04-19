@@ -17,8 +17,19 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: 'VoltDrive Nepal | The Future is Electric',
-  description: 'Premium EV importer and distributor in Nepal. High-tech, performance electric vehicles.',
+  title: 'Kesla Auto Pvt. Ltd. | Authorized Dealer — Chufeng M31 Nepal',
+  description:
+    'Kesla Auto Pvt. Ltd. is the exclusive authorized dealer for Chufeng M31 1.5-ton light truck pickup in Nepal. Serving customers from Bouddha, Kathmandu.',
+  keywords: [
+    'Kesla Auto',
+    'Kesla Motors',
+    'Chufeng M31',
+    'pickup truck Nepal',
+    'light truck Nepal',
+    'Bouddha Kathmandu',
+    'authorized dealer Nepal',
+    'Xizang Xima Auto',
+  ],
 };
 
 export default function RootLayout({
