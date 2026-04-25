@@ -19,14 +19,14 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: 'Kesla Auto Pvt. Ltd. | Authorized Dealer — Chufeng M31 Nepal',
   description:
-    'Kesla Auto Pvt. Ltd. is the exclusive authorized dealer for Chufeng M31 1.5-ton light truck pickup in Nepal. Serving customers from Bouddha, Kathmandu.',
+    'Kesla Auto Pvt. Ltd. is the exclusive authorized dealer for Chufeng M31 1.5-ton light truck pickup in Nepal. Serving customers from Gathhaghar, Bhaktapur.',
   keywords: [
     'Kesla Auto',
     'Kesla Motors',
     'Chufeng M31',
     'pickup truck Nepal',
     'light truck Nepal',
-    'Bouddha Kathmandu',
+    'Gathhaghar Bhaktapur',
     'authorized dealer Nepal',
     'Xizang Xima Auto',
   ],
@@ -40,11 +40,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${spaceGrotesk.variable} ${manrope.variable} h-full antialiased dark`}
+      className={`${spaceGrotesk.variable} ${manrope.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-on-background">
         <Navbar />
-        <main className="flex-1 mt-24">{children}</main>
+        <main className="flex-1">{children}</main>
         <Footer />
       </body>
     </html>

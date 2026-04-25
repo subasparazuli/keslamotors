@@ -12,12 +12,12 @@ export interface Dealer {
 export const dealers: Dealer[] = [
   {
     id: '1',
-    name: 'Kesla Auto Pvt. Ltd. — Bouddha (Head Office)',
-    location: 'Ward No. 6, Bouddha, Kathmandu',
+    name: 'Kesla Auto Pvt. Ltd. — Gathhaghar (Head Office)',
+    location: 'Gathhaghar, Bhaktapur',
     province: 'Bagmati',
     type: 'Authorized Showroom, Sales & Service',
-    phone: '+977-1-4900000',
-    email: 'info@keslaauto.com.np',
-    coordinates: { lat: 27.7215, lng: 85.3618 },
+    phone: '9851420820',
+    email: 'kesla.auto@gmail.com',
+    coordinates: { lat: 27.6741619, lng: 85.3761929 },
   },
 ];

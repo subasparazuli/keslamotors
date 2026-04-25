@@ -8,7 +8,7 @@ export default function Exchange() {
   return (
     <div className="w-full min-h-screen bg-surface pt-32 pb-24">
       <div className="container max-w-3xl mx-auto">
-        <h1 className="text-5xl font-display font-bold text-white uppercase tracking-tighter mb-4 text-center">
+        <h1 className="text-5xl font-display font-bold text-on-background uppercase tracking-tighter mb-4 text-center">
           Vehicle <span className="text-primary">Exchange</span>
         </h1>
         <p className="text-center text-on-surface-variant font-body mb-12">
@@ -21,21 +21,21 @@ export default function Exchange() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-2">
                   <label className="text-xs text-on-surface-variant uppercase tracking-widest font-display">Current Make</label>
-                  <input type="text" placeholder="e.g. Toyota" required className="bg-surface-container-lowest border border-outline-variant/20 py-3 px-4 rounded text-white focus:outline-none focus:border-primary" />
+                  <input type="text" placeholder="e.g. Toyota" required className="bg-surface-container-lowest border border-outline-variant/20 py-3 px-4 rounded text-on-background focus:outline-none focus:border-primary" />
                 </div>
                 <div className="flex flex-col gap-2">
                   <label className="text-xs text-on-surface-variant uppercase tracking-widest font-display">Current Model</label>
-                  <input type="text" placeholder="e.g. Corolla" required className="bg-surface-container-lowest border border-outline-variant/20 py-3 px-4 rounded text-white focus:outline-none focus:border-primary" />
+                  <input type="text" placeholder="e.g. Corolla" required className="bg-surface-container-lowest border border-outline-variant/20 py-3 px-4 rounded text-on-background focus:outline-none focus:border-primary" />
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-2">
                   <label className="text-xs text-on-surface-variant uppercase tracking-widest font-display">Manufacturing Year</label>
-                  <input type="number" placeholder="2018" required className="bg-surface-container-lowest border border-outline-variant/20 py-3 px-4 rounded text-white focus:outline-none focus:border-primary" />
+                  <input type="number" placeholder="2018" required className="bg-surface-container-lowest border border-outline-variant/20 py-3 px-4 rounded text-on-background focus:outline-none focus:border-primary" />
                 </div>
                 <div className="flex flex-col gap-2">
                   <label className="text-xs text-on-surface-variant uppercase tracking-widest font-display">Mileage (KM)</label>
-                  <input type="number" placeholder="45000" className="bg-surface-container-lowest border border-outline-variant/20 py-3 px-4 rounded text-white focus:outline-none focus:border-primary" />
+                  <input type="number" placeholder="45000" className="bg-surface-container-lowest border border-outline-variant/20 py-3 px-4 rounded text-on-background focus:outline-none focus:border-primary" />
                 </div>
               </div>
               
@@ -43,7 +43,7 @@ export default function Exchange() {
               
               <div className="flex flex-col gap-2">
                 <label className="text-xs text-on-surface-variant uppercase tracking-widest font-display">Desired EV to Exchange</label>
-                <select className="bg-surface-container-lowest border border-outline-variant/20 py-3 px-4 rounded text-white focus:outline-none focus:border-primary">
+                <select className="bg-surface-container-lowest border border-outline-variant/20 py-3 px-4 rounded text-on-background focus:outline-none focus:border-primary">
                   <option>Volt X</option>
                   <option>Drive Pro</option>
                   <option>Volt Hatch</option>
@@ -52,7 +52,7 @@ export default function Exchange() {
 
               <div className="flex flex-col gap-2 mt-4">
                 <label className="text-xs text-on-surface-variant uppercase tracking-widest font-display">Your Contact Number</label>
-                <input type="tel" placeholder="+977-XXXXXXXXXX" required className="bg-surface-container-lowest border border-outline-variant/20 py-3 px-4 rounded text-white focus:outline-none focus:border-primary" />
+                <input type="tel" placeholder="+977-XXXXXXXXXX" required className="bg-surface-container-lowest border border-outline-variant/20 py-3 px-4 rounded text-on-background focus:outline-none focus:border-primary" />
               </div>
 
               <Button variant="primary" type="submit" className="mt-4 w-full">Request Valuation</Button>
