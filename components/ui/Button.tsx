@@ -19,7 +19,7 @@ export const Button = ({
   let baseStyles = 'inline-flex items-center justify-center font-display uppercase tracking-wider text-sm font-semibold rounded-full px-8 py-3 transition-all duration-300 ';
   
   if (variant === 'primary') {
-    baseStyles += 'bg-primary-gradient text-on-primary hover:scale-105 shadow-[0_0_20px_rgba(204,255,0,0.2)] hover:shadow-[0_0_30px_rgba(204,255,0,0.4)] border border-transparent';
+    baseStyles += 'bg-primary-gradient text-on-primary hover:scale-105 shadow-[0_0_20px_rgba(74,139,194,0.25)] hover:shadow-[0_0_30px_rgba(106,180,232,0.4)] border border-transparent';
   } else if (variant === 'secondary') {
     // Glass-style secondary button
     baseStyles += 'bg-surface-variant/20 border border-outline-variant/30 text-primary hover:bg-surface-variant/40 hover:border-outline-variant/50 backdrop-blur-md';

@@ -5,7 +5,7 @@ export default function BladeBattery() {
   return (
     <div className="w-full min-h-screen bg-surface pt-32 pb-24">
       <div className="container max-w-4xl mx-auto text-center">
-        <h1 className="text-5xl font-display font-bold text-white uppercase tracking-tighter mb-4 text-center">
+        <h1 className="text-5xl font-display font-bold text-on-background uppercase tracking-tighter mb-4 text-center">
           Blade <span className="text-primary">Battery</span>
         </h1>
         <p className="text-on-surface-variant font-body text-xl mb-12">
