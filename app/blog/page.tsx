@@ -19,8 +19,8 @@ export default function BlogIndex() {
           {blogs.map((post) => (
             <Card key={post.id} className="flex flex-col h-full bg-surface-container-low! hover:bg-surface-container-high! transition-colors">
               <div className="w-full h-48 bg-surface-container-highest border-b border-outline-variant/15 flex items-center justify-center relative overflow-hidden">
-                 <Image src={post.image} alt={post.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                 <div className="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                <Image src={post.image} alt={post.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute inset-0 bg-background/10 group-hover:bg-transparent transition-colors duration-500"></div>
               </div>
               <div className="p-6 flex flex-col flex-1">
                 <div className="flex gap-4 mb-3 text-xs font-display uppercase tracking-widest text-primary">

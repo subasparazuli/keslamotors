@@ -10,7 +10,7 @@ export interface EVModel {
   topSpeed: string;
   seats: number;
   category: 'Hatchback' | 'Pickup' | 'Microvan';
-  colors: { name: string; hex: string }[];
+  colors: { name: string; hex: string; image?: string }[];
   features: string[];
   image: string;
   colorName?: string;
@@ -19,33 +19,6 @@ export interface EVModel {
 }
 
 // ─── HATCHBACKS ──────────────────────────────────────────────
-
-const nanoBanana: EVModel = {
-  id: 'h1',
-  name: 'Nano Banana',
-  slug: 'nano-banana',
-  price: 'NPR 14,99,000',
-  range: '200km',
-  power: '20kW',
-  battery: '17.3kWh LFP Battery',
-  zeroToHundred: '15.9s',
-  topSpeed: '100km/h',
-  seats: 4,
-  category: 'Hatchback',
-  colorName: 'Cherry Red',
-  comingSoon: true,
-  colors: [
-    { name: 'Cherry Red', hex: '#C0251C' },
-    { name: 'Ruby Black', hex: '#1A1A1A' },
-    { name: 'Future Gray', hex: '#9EAAAF' },
-    { name: 'CoCo Pink', hex: '#E8C9A9' },
-    { name: 'Lemon Green', hex: '#A8E0C3' },
-    { name: 'Berry Blue', hex: '#1BBEBA' },
-    { name: 'Jasmine White', hex: '#F5F5F0' },
-  ],
-  features: ['Smart Connectivity', 'Fast Charging', 'Reverse Camera', 'Keyless Entry'],
-  image: '/images/models/nano-cherry-red.png',
-};
 
 const modelC: EVModel = {
   id: 'h2',
@@ -92,9 +65,11 @@ const modelCPro: EVModel = {
   category: 'Hatchback',
   comingSoon: false,
   colors: [
-    { name: 'Metallic Silver', hex: '#C0C0C0' },
-    { name: 'Pearl White', hex: '#F0F0EC' },
-    { name: 'Midnight Black', hex: '#1A1A1A' },
+    { name: 'Red', hex: '#C41E3A', image: '/images/models/henrey-red.png' },
+    { name: 'Gray', hex: '#C0C0C0', image: '/images/models/henrey-gray.png' },
+    { name: 'Black', hex: '#1A1A1A', image: '/images/models/henrey-black.png' },
+    { name: 'White', hex: '#F0F0EC', image: '/images/models/henrey-white.png' },
+    { name: 'Green', hex: '#B5D89B', image: '/images/models/henrey-green.png' },
   ],
   features: [
     'Fast Charging (36 min)',
@@ -108,7 +83,7 @@ const modelCPro: EVModel = {
     'Driver Airbag',
     'Alloy Wheels',
   ],
-  image: '/images/models/model-c-pro.png',
+  image: '/images/models/henrey-red.png',
 };
 
 const modelD: EVModel = {
@@ -125,9 +100,11 @@ const modelD: EVModel = {
   category: 'Hatchback',
   comingSoon: false,
   colors: [
-    { name: 'Pure White', hex: '#FFFFFF' },
-    { name: 'Sky Blue', hex: '#87CEEB' },
-    { name: 'Sunset Orange', hex: '#E8854A' },
+    { name: 'Red', hex: '#C41E3A', image: '/images/models/henrey-red.png' },
+    { name: 'Gray', hex: '#C0C0C0', image: '/images/models/henrey-gray.png' },
+    { name: 'Black', hex: '#1A1A1A', image: '/images/models/henrey-black.png' },
+    { name: 'White', hex: '#F0F0EC', image: '/images/models/henrey-white.png' },
+    { name: 'Green', hex: '#B5D89B', image: '/images/models/henrey-green.png' },
   ],
   features: [
     'EPS Power Steering',
@@ -139,7 +116,7 @@ const modelD: EVModel = {
     'Remote Key',
     'Halogen Headlights',
   ],
-  image: '/images/models/model-d.png',
+  image: '/images/models/henrey-red.png',
 };
 
 const modelDPro: EVModel = {
@@ -274,7 +251,6 @@ const slk6540BEV: EVModel = {
 
 export const models: EVModel[] = [
   // Hatchbacks
-  nanoBanana,
   modelC,
   modelCPro,
   modelD,
