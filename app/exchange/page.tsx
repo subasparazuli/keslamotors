@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/Button';
+import { availableModels } from '@/data/models';
 
 export default function Exchange() {
   const [submitted, setSubmitted] = useState(false);
@@ -38,15 +39,15 @@ export default function Exchange() {
                   <input type="number" placeholder="45000" className="bg-surface-container-lowest border border-outline-variant/20 py-3 px-4 rounded text-on-background focus:outline-none focus:border-primary" />
                 </div>
               </div>
-              
+
               <div className="border-t border-outline-variant/10 my-4"></div>
-              
+
               <div className="flex flex-col gap-2">
                 <label className="text-xs text-on-surface-variant uppercase tracking-widest font-display">Desired EV to Exchange</label>
                 <select className="bg-surface-container-lowest border border-outline-variant/20 py-3 px-4 rounded text-on-background focus:outline-none focus:border-primary">
-                  <option>Volt X</option>
-                  <option>Drive Pro</option>
-                  <option>Volt Hatch</option>
+                  {availableModels.map((model) => (
+                    <option key={model.id} value={model.slug}>{model.name}</option>
+                  ))}
                 </select>
               </div>
 
@@ -59,9 +60,9 @@ export default function Exchange() {
             </form>
           ) : (
             <div className="text-center py-10 animate-in fade-in zoom-in duration-500">
-               <h3 className="text-3xl font-display font-bold text-primary mb-4">Request Submitted!</h3>
-               <p className="text-on-surface-variant">Our valuation team is analyzing your vehicle's specifications. We will contact you shortly with an estimated trade-in value!</p>
-               <Button variant="secondary" onClick={() => setSubmitted(false)} className="mt-8">Submit Another</Button>
+              <h3 className="text-3xl font-display font-bold text-primary mb-4">Request Submitted!</h3>
+              <p className="text-on-surface-variant">Our valuation team is analyzing your vehicle's specifications. We will contact you shortly with an estimated trade-in value!</p>
+              <Button variant="secondary" onClick={() => setSubmitted(false)} className="mt-8">Submit Another</Button>
             </div>
           )}
         </div>
