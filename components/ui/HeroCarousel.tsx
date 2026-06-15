@@ -4,11 +4,12 @@ import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 
 const heroImages = [
-  { src: '/images/models/hero-nano-blue.png', alt: 'MINOVA Berry Blue on a Himalayan mountain highway' },
+  { src: '/images/models/hero-nano-white.png', alt: 'henery EV white image' },
   { src: '/images/models/hero-nano-red.png', alt: 'MINOVA Cherry Red in vibrant city nightlife' },
   { src: '/images/models/hero-nano-green.png', alt: 'MINOVA Lemon Green driving through tea gardens' },
   { src: '/images/models/hero-nano-black.png', alt: 'MINOVA Ruby Black in premium showroom' },
   { src: '/images/models/hero-nano-gray.png', alt: 'MINOVA Future Gray at a futuristic charging station' },
+  { src: '/images/models/hero-nano-logo.png', alt: 'MINOVA Logo' }
 ];
 
 export function HeroCarousel() {

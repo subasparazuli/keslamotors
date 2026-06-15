@@ -157,11 +157,10 @@ function PhotoLightbox({
                   onColorChange(c);
                   setIsImageLoaded(false);
                 }}
-                className={`w-7 h-7 md:w-8 md:h-8 rounded-full border-2 transition-all duration-200 hover:scale-115 active:scale-90 cursor-pointer ${
-                  activeColor?.name === c.name
-                    ? 'border-white ring-2 ring-white/40 ring-offset-2 ring-offset-transparent scale-110'
-                    : 'border-white/20 hover:border-white/60'
-                }`}
+                className={`w-7 h-7 md:w-8 md:h-8 rounded-full border-2 transition-all duration-200 hover:scale-115 active:scale-90 cursor-pointer ${activeColor?.name === c.name
+                  ? 'border-white ring-2 ring-white/40 ring-offset-2 ring-offset-transparent scale-110'
+                  : 'border-white/20 hover:border-white/60'
+                  }`}
                 style={{ backgroundColor: c.hex }}
               />
             ))}
@@ -190,11 +189,10 @@ export function ModelCard({ model }: { model: EVModel }) {
     <>
       <Card
         hoverable={!isComingSoon}
-        className={`p-0 flex flex-col group cursor-pointer overflow-hidden relative ${
-          isComingSoon
-            ? 'bg-surface-container-low/50 border-outline-variant/10'
-            : 'bg-surface-container-low'
-        }`}
+        className={`p-0 flex flex-col group cursor-pointer overflow-hidden relative ${isComingSoon
+          ? 'bg-surface-container-low/50 border-outline-variant/10'
+          : 'bg-surface-container-low'
+          }`}
       >
         {/* Coming Soon Overlay */}
         {isComingSoon && (
@@ -215,9 +213,8 @@ export function ModelCard({ model }: { model: EVModel }) {
             if (!isComingSoon) setLightboxOpen(true);
           }}
           disabled={isComingSoon}
-          className={`w-full h-56 bg-white relative overflow-hidden transition-transform duration-500 border-0 p-0 ${
-            isComingSoon ? 'cursor-not-allowed' : 'cursor-zoom-in'
-          } ${isComingSoon ? '' : 'group-hover:scale-105'}`}
+          className={`w-full h-56 bg-white relative overflow-hidden transition-transform duration-500 border-0 p-0 ${isComingSoon ? 'cursor-not-allowed' : 'cursor-zoom-in'
+            } ${isComingSoon ? '' : 'group-hover:scale-105'}`}
           aria-label={`Enlarge photo of ${model.name}`}
         >
           <Image
@@ -248,11 +245,10 @@ export function ModelCard({ model }: { model: EVModel }) {
                   e.stopPropagation();
                   setActiveColor(c);
                 }}
-                className={`w-5 h-5 rounded-full border transition-all duration-200 hover:scale-115 active:scale-90 cursor-pointer ${
-                  activeColor?.name === c.name
-                    ? 'border-primary ring-2 ring-primary/40 ring-offset-2 ring-offset-background scale-105'
-                    : 'border-outline-variant/30 hover:border-on-background/50'
-                }`}
+                className={`w-5 h-5 rounded-full border transition-all duration-200 hover:scale-115 active:scale-90 cursor-pointer ${activeColor?.name === c.name
+                  ? 'border-primary ring-2 ring-primary/40 ring-offset-2 ring-offset-background scale-105'
+                  : 'border-outline-variant/30 hover:border-on-background/50'
+                  }`}
                 style={{ backgroundColor: c.hex }}
               />
             ))}
@@ -310,7 +306,7 @@ export function ModelCard({ model }: { model: EVModel }) {
               href={`/models/${model.slug}`}
               className="mt-auto w-full group-hover:bg-primary group-hover:text-on-primary group-hover:border-primary text-sm"
             >
-              View Details <ArrowRight size={14} className="ml-1 inline" />
+              View Specifiactions <ArrowRight size={14} className="ml-1 inline" />
             </Button>
           )}
         </div>

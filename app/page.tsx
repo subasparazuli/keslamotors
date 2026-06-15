@@ -19,21 +19,6 @@ export default function Home() {
         </div>
 
         <div className="container relative z-20 text-center px-4">
-          {/* <div className="inline-block mb-4 px-4 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs uppercase tracking-widest font-semibold">
-            Kesla Auto Pvt. Ltd. · Exclusive Authorized Dealer
-          </div>
-          <h1 className="text-6xl md:text-8xl font-display font-bold text-white mb-6 uppercase leading-none tracking-tighter">
-            The Future Is <br className="hidden md:block" />
-            <span className="text-primary italic pr-2">Electric</span>
-          </h1> */}
-          {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <Button variant="primary" href="/models">
-              Explore Models
-            </Button>
-            <Button variant="secondary" href="/test-drive">
-              Book Test Drive
-            </Button>
-          </div> */}
         </div>
       </section>
 
@@ -70,6 +55,28 @@ export default function Home() {
                 Microvans
               </h3>
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Presentation */}
+      <section className="py-12 bg-surface">
+        <div className="container">
+          <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl border border-outline-variant/20 bg-surface-container-lowest group">
+            <video
+              className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-[1.02]"
+              autoPlay
+              muted
+              loop
+              playsInline
+            // controls
+            // poster="/videos/hero-nano-logo.png"
+            >
+              {/* Note: Update the source src to match your actual video file when uploaded */}
+              <source src="/videos/henery-video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div className="absolute inset-0 pointer-events-none rounded-3xl ring-1 ring-inset ring-white/10"></div>
           </div>
         </div>
       </section>
@@ -135,7 +142,7 @@ export default function Home() {
                     </div>
                   </div>
                   <Button variant="secondary" href={`/models/${model.slug}`} className="mt-auto w-full group-hover:bg-primary group-hover:text-on-primary group-hover:border-primary">
-                    View Details
+                    View Specifications
                   </Button>
                 </div>
               </Card>
